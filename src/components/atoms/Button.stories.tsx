@@ -14,7 +14,6 @@ export const Primary: StoryObj<typeof Button> = {
     onClick: () => {
       const eventDetails = { time: new Date().toISOString() };
       action("button-clicked")(eventDetails);
-      alert(`Button clicked at: ${eventDetails.time}`);
     },
   },
   play: async ({ canvasElement }) => {
