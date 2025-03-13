@@ -8,11 +8,31 @@ export default {
 
 export const Default: StoryObj<typeof Food> = {
   args: {
-    "people": [
-      {"name": "Dave", "surname": "Smith"},
-      {"name": "John", "surname": "Doe"}
+    people: [
+      {
+        name: "Dave",
+        surname: "Smith"
+      },
+      {
+        name: "John",
+        surname: "Doe"
+      }
     ],
 
-    "burger": "I love burgers"
+    burger: "I love burgers"
   },
+};
+
+export const Hotdogs: StoryObj<typeof Food> = {
+  args: {
+    people: [{
+      "name": "Dave",
+      "surname": "Smith"
+    }, {
+      "name": "John",
+      "surname": "Doe"
+    }],
+
+    burger: "I love hotdogs"
+  }
 };

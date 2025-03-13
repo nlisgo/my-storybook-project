@@ -4,7 +4,6 @@ import Food from './components/molecules/Food'
 
 function App() {
 
-
   const [foodData, setFoodData] = useState<{ burger: string, people: {name: string, surname: string}[] }>({
     burger: '',
     people: []
@@ -15,7 +14,6 @@ function App() {
     fetch('/src/food.json')
       .then(response => response.json())
       .then(data => setFoodData(data))
-      .catch(error => console.error('Error fetching food data:', error))
   }, [])
 
   return (
