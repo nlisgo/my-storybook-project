@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Layout from "../templates/Layout";
 import Card from "../molecules/Card";
-import styles from "./HomePage.module.css";
+import styles from "./DummyHomePage.module.css";
+import Food from "../molecules/Food";
 
-interface HomePageProps {
+interface DummyHomePageProps {
   title?: string;
   weather?: {
     temperature: number;
@@ -11,7 +12,7 @@ interface HomePageProps {
   },
 }
 
-const HomePage: React.FC<HomePageProps> = ({ title, weather }) => {
+const DummyHomePage: React.FC<DummyHomePageProps> = ({ title, weather }) => {
   return (
     <Layout>
       <section className={styles.home}>
@@ -20,8 +21,9 @@ const HomePage: React.FC<HomePageProps> = ({ title, weather }) => {
           {weather && <p>🌤️ Current Temperature in New York: {weather.temperature}{weather.unit}</p>}
         </Card>
       </section>
+      <Food burger="cheeseburger" people={[{name: "burt", surname: "smith"}]}/>
     </Layout>
   );
 };
 
-export default HomePage;
+export default DummyHomePage;
