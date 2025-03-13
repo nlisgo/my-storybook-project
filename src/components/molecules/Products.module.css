@@ -1,0 +1,15 @@
+.products {
+  background: green;
+  min-width: 500px;
+  width: 800px;
+
+  @media (min-width: 600px) {
+    background: pink;
+  }
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid black;
+}
