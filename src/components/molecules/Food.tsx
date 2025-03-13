@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Food.module.css";
+import "./Food.css";
 
 const Food: React.FC< { burger: string, people?: {name: string, surname: string} [] } > = ({ burger, people }) => {
   return (
-    <div className={styles.food}>
+    <div className="food">
       <h3>Card Title</h3>
       <ul>
         {

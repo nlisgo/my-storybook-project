@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../atoms/Button";
-import styles from "./Card.module.css";
+import "./Card.css";
 
 const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className={styles.card}>
+    <div className="card">
       <h3>Card Title</h3>
       <p>Some card content</p>
       {children}

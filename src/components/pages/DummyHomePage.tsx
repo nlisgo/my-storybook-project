@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../templates/Layout";
 import Card from "../molecules/Card";
-import styles from "./DummyHomePage.module.css";
+import "./DummyHomePage.css";
 import Food from "../molecules/Food";
 
 interface DummyHomePageProps {
@@ -15,7 +15,7 @@ interface DummyHomePageProps {
 const DummyHomePage: React.FC<DummyHomePageProps> = ({ title, weather }) => {
   return (
     <Layout>
-      <section className={styles.home}>
+      <section className="home">
         <h2>{title ?? "Welcome to My Site"}</h2>
         <Card>
           {weather && <p>🌤️ Current Temperature in New York: {weather.temperature}{weather.unit}</p>}
