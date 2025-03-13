@@ -1,0 +1,8 @@
+{
+  "people": [
+    {"name": "Dave", "surname": "Smith"},
+    {"name": "John", "surname": "Doe"}
+  ],
+
+  "burger": "I love burgers"
+}
